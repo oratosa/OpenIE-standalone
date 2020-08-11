@@ -146,20 +146,12 @@ For running without jar:
 
 First create the stand-alone jar.
 
-    sbt clean compile assembly
-
-You may need to add the above memory options.
-
     sbt -J-Xmx10000M clean compile assembly
 
-Then you can run the resulting jar file as normal.
+Then you can run the resulting jar file as HTTP server.
 
-    java -jar openie-assembly.jar
-
-You may need to add the above memory options.
-
-    java -Xmx10g -XX:+UseConcMarkSweepGC -jar openie-assembly.jar
-    
+    java -Xmx10g -XX:+UseConcMarkSweepGC -jar target/scala-2.10/openie-assembly-5.0-SNAPSHOT.jar --httpPort 8000
+  
 The WordNet folder and the data/languageModel file must be placed parallel to the standalone openie jar, while running it.
 
 ### Running as HTTP Server
