@@ -1,0 +1,10 @@
+#compileによって追加されたフォルダ
+ONRE/project/project/
+ONRE/project/target/
+ONRE/target/
+data/languageModel
+lib/
+project/project/
+project/target/
+target/
+
